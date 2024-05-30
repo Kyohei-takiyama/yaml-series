@@ -1,0 +1,23 @@
+# 改行を含む文字列を表現するための方法
+description: |
+  This is a description
+  that spans multiple lines
+  and is indented
+  with a pipe character
+  to preserve newlines
+  and leading spaces
+# {
+#   "description": "This is a description\nthat spans multiple lines\nand is indented\nwith a pipe character\nto preserve newlines\nand leading spaces\n"
+# }
+
+# 改行せずに1行で表現するための方法（半角スペースがつく）
+description-single-line: >
+  This is a description
+  that spans multiple lines
+  and is indented
+  with a greater than character
+  to preserve newlines
+  and leading spaces
+# {
+#   "description-single-line": "This is a description that spans multiple lines and is indented with a greater than character to preserve newlines and leading spaces"
+# }
