@@ -1,0 +1,28 @@
+apple: 1
+
+# ng - not space
+# apple:1
+
+banana:
+  1
+
+cherry:
+  1
+  2
+  3
+# same as
+cherry2: 1 2 3
+
+dict1:
+  apple: 1
+  banana: 2
+  cherry: 3
+# same as json
+# {
+#   "dict1": {
+#     "apple": 1,
+#     "banana": 2,
+#     "cherry": 3
+#   }
+# }
+
