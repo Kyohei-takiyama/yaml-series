@@ -1,0 +1,32 @@
+# - apple: 1
+# # [
+# #   {
+# #     "apple": 1
+# #   }
+# # ]
+
+# - apple: 1
+# - banana: 2
+# - cherry: 3
+# # [
+#   {
+#     "apple": 1
+#   },
+#   {
+#     "banana": 2
+#   },
+#   {
+#     "cherry": 3
+#   }
+# ]
+
+steps:
+  - comment: "list (scalar)"
+# {
+#   "steps": [
+#     {
+#       "comment": "list (scalar)"
+#     }
+#   ]
+# }
+
