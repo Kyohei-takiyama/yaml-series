@@ -1,0 +1,51 @@
+# list (scalar)
+
+- apple
+- banana
+
+# long line
+- apple
+  banana
+  cherry
+
+# same as
+- apple banana cherry
+
+-
+  - apple
+# same json
+# [
+#   [
+#     "apple"
+#   ]
+# ]
+
+-
+  - apple
+  - banana
+# same json
+# [
+#   [
+#     "apple",
+#     "banana"
+#   ]
+# ]
+
+# list in list
+-
+  - apple
+-
+  - banana
+-
+  - cherry
+# [
+#   [
+#     "apple"
+#   ],
+#   [
+#     "banana"
+#   ],
+#   [
+#     "cherry"
+#   ]
+# ]
