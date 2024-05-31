@@ -1,0 +1,14 @@
+# Sequence (list)
+furuits: !!seq
+  - apple
+  - banana
+# same as
+furuits2:
+  - apple
+  - banana
+
+# mapping (dict)
+dict1: !!map
+  apple: 1
+  banana: 2
+  cherry: 3
