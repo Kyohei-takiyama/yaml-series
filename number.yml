@@ -1,0 +1,12 @@
+# data type int
+apple1: 1
+apple2: !!int 1
+
+# data type float
+banana1: 1.1
+banana2: !!float 1.1
+
+bynary1: !!binary "SGVsbG8sIFdvcmxkIQ=="
+octal1: !!int 0o10
+hex1: !!int 0x10
+comma1: !!int +54000
