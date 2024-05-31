@@ -1,0 +1,85 @@
+# データの再利用
+person1:
+  name: "John"
+  age: 30
+  address: &address
+    city: "New York"
+    state: "NY"
+    zip: "10001"
+
+person2:
+  name: "Jane"
+  age: 25
+  address: *address
+# same as json
+# {
+#   "person1": {
+#     "name": "John",
+#     "age": 30,
+#     "address": {
+#       "city": "New York",
+#       "state": "NY",
+#       "zip": "10001"
+#     }
+#   },
+#   "person2": {
+#     "name": "Jane",
+#     "age": 25,
+#     "address": {
+#       "city": "New York",
+#       "state": "NY",
+#       "zip": "10001"
+#     }
+#   }
+# }
+
+preference: &preference
+  like: "apple"
+  dislike: "banana"
+
+# 値を抜き出して、再利用できる
+person3:
+  name: "Tom"
+  age: 35
+  <<: *preference
+
+# 好みのキーを指定できる
+person4:
+  name: "Alice"
+  age: 28
+  likes: *preference
+
+# 値を上書きして再利用できる
+person5:
+  name: "Bob"
+  age: 40
+  <<: *preference
+  dislike: "cherry"
+
+# same as json
+# {
+#   "preference": {
+#     "like": "apple",
+#     "dislike": "banana"
+#   },
+#   "person3": {
+#     "name": "Tom",
+#     "age": 35,
+#     "like": "apple",
+#     "dislike": "banana"
+#   },
+#   "person4": {
+#     "name": "Alice",
+#     "age": 28,
+#     "likes": {
+#       "like": "apple",
+#       "dislike": "banana"
+#     }
+#   },
+#   "person5": {
+#     "name": "Bob",
+#     "age": 40,
+#     "like": "apple",
+#     "dislike": "cherry"
+#   }
+# }
