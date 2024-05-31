@@ -1,0 +1,19 @@
+# date type bool
+# true
+bool1: true
+bool2: True
+bool3: TRUE
+bool4: y
+bool5: Y
+bool6: yes
+
+# false
+bool7: false
+bool8: False
+bool9: FALSE
+bool10: n
+bool11: N
+bool12: no
+
+bool13: !!bool true
+bool14: !!bool false
