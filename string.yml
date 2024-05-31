@@ -1,0 +1,24 @@
+# data type: string
+apple1: red
+banana1: yellow
+
+# ダブルクオートとシングルクオートは同じ意味
+apple2: "red"
+banana2: 'yellow'
+
+# ダブルクオートとシングルクオート分ける理由
+# 文字列内に特殊文字を含む場合はダブルクオートを使う。シングルだと特殊文字がそのまま出力される
+# または、文字列内にシングルクオートを含む場合はダブルクオートを使う
+shell: "#!/bin/bash \n echo 'Hello, World!'"
+# ng 改行コードがそのまま出力される
+shell2: '#!/bin/bash \n echo Hello, World!'
+
+# same as
+shell3: |
+  #!/bin/bash
+  echo 'Hello, World!'
+  echo "Hello, World!"
+
+# 明示指定
+string1: !!str Hello, World!
+
