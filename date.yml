@@ -1,0 +1,12 @@
+# standard timezone
+standard timezone: 2000-01-01T00:00:00Z
+standard timezone2: !!timestamp 2000-01-01T00:00:00Z
+
+# local timezone
+local timezone: 2000-01-01T00:00:00+09:00
+
+# date only
+date only: 2000-01-01
+# same as
+date only2: !!timestamp 2000-01-01
+date only3: 2000-01-01T00:00:00Z
